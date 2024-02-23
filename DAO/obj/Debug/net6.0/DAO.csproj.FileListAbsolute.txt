@@ -1,0 +1,16 @@
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\DAO.deps.json
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\DAO.dll
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\DAO.pdb
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\BO.dll
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\BO.pdb
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.csproj.AssemblyReference.cache
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.AssemblyInfoInputs.cache
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.AssemblyInfo.cs
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.csproj.CoreCompileInputs.cache
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.csproj.CopyComplete
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.dll
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\refint\DAO.dll
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\DAO.pdb
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\obj\Debug\net6.0\ref\DAO.dll
+D:\University\2024_SP24\PRN221\Code\PRN221_Assigment1\DAO\bin\Debug\net6.0\appsettings.json

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="download %281%29.jpg" />
+    <None Remove="shiba-inu-dogecoin-gif-internet-meme-egypt-dog-6bc20eb5907badf47caecf32802faba8.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="download (1).jpg" />
+    <Resource Include="shiba-inu-dogecoin-gif-internet-meme-egypt-dog-6bc20eb5907badf47caecf32802faba8.png" />
+  </ItemGroup>
+
+</Project>

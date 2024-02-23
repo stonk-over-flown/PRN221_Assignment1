@@ -1,0 +1,70 @@
+﻿<Window x:Class="WPFStore.ManagerScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFStore"
+        mc:Ignorable="d"
+        Title="ManagerScreen" Height="470" Width="831"
+        ResizeMode="NoResize">
+    <Grid>
+        <TabControl x:Name="tb_Tabs" Margin="10,10,0,10" HorizontalAlignment="Left" Width="802">
+            <TabItem x:Name="tb_AccountTab" Header="Account Management" FontFamily="Segoe UI Semibold">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
+                    <DataGrid x:Name="dgv_AccountList" Height="340" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Segoe UI" SelectedCellsChanged="dgv_AccountList_SelectedCellsChanged" Margin="0,40,334,0"/>
+                    <Label Content="Account ID" HorizontalAlignment="Left" Margin="468,0,0,0" VerticalAlignment="Top" Height="28" RenderTransformOrigin="0.49,0.739"/>
+                    <Label Content="Full Name" HorizontalAlignment="Left" Margin="468,28,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="DOB" HorizontalAlignment="Left" Margin="468,56,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Phone" HorizontalAlignment="Left" Margin="468,84,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Address" HorizontalAlignment="Left" Margin="468,112,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Password" HorizontalAlignment="Left" Margin="468,140,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Role" HorizontalAlignment="Left" Margin="468,196,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="468,168,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Status" HorizontalAlignment="Left" Margin="468,224,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <TextBox x:Name="txt_AccountId" HorizontalAlignment="Left" Margin="538,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1" IsEnabled="False"/>
+                    <TextBox x:Name="txt_FullName" HorizontalAlignment="Left" Margin="538,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="dt_DateOfBirth" HorizontalAlignment="Left" Margin="538,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="txt_PhoneNumber" HorizontalAlignment="Left" Margin="538,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="txt_Address" HorizontalAlignment="Left" Margin="538,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="txt_Password" HorizontalAlignment="Left" Margin="538,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Margin="538,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="bool_Status" HorizontalAlignment="Left" Margin="538,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <ComboBox x:Name="cb_Role" HorizontalAlignment="Left" Margin="538,196,0,0" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center"/>
+                    <Button x:Name="btn_AddAccount" Content="Add" HorizontalAlignment="Left" Margin="538,256,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_AddAccount_Click"/>
+                    <Button x:Name="btn_EditAccount" Content="Edit" HorizontalAlignment="Left" Margin="538,288,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_EditAccount_Click"/>
+                    <Button x:Name="btn_DeleteAccount" Content="Delete" HorizontalAlignment="Left" Margin="538,320,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_DeleteAccount_Click"/>
+                    <Button x:Name="btn_ClearFormAccount" Content="Clear" HorizontalAlignment="Left" Margin="538,352,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_ClearFormAccount_Click"/>
+                    <Label Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" RenderTransformOrigin="0.49,0.739" Width="48"/>
+                    <TextBox x:Name="txt_Search" HorizontalAlignment="Left" Margin="53,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1" TextChanged="txt_SearchAccount_TextChanged"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_ProductTab" Header="Product Management" FontFamily="Segoe UI Semibold">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
+                    <DataGrid x:Name="dgv_ProductList" Height="340" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Segoe UI" SelectedCellsChanged="dgv_ProductList_SelectedCellsChanged" Margin="0,40,334,0"/>
+                    <Label Content="Product ID" HorizontalAlignment="Left" Margin="468,0,0,0" VerticalAlignment="Top" Height="28" RenderTransformOrigin="0.49,0.739"/>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="468,28,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Unit" HorizontalAlignment="Left" Margin="468,56,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Quantity" HorizontalAlignment="Left" Margin="468,84,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <Label Content="Category" HorizontalAlignment="Left" Margin="468,112,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+                    <TextBox x:Name="txt_ProductId" HorizontalAlignment="Left" Margin="538,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1" IsEnabled="False"/>
+                    <TextBox x:Name="txt_ProductName" HorizontalAlignment="Left" Margin="538,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="dt_CalculationUnit" HorizontalAlignment="Left" Margin="538,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <TextBox x:Name="int_Quantity" HorizontalAlignment="Left" Margin="538,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1"/>
+                    <ComboBox x:Name="cb_Category" HorizontalAlignment="Left" Margin="538,112,0,0" VerticalAlignment="Top" Width="246" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center"/>
+                    <Button x:Name="btn_AddProduct" Content="Add" HorizontalAlignment="Left" Margin="538,256,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_AddProduct_Click"/>
+                    <Button x:Name="btn_EditProduct" Content="Edit" HorizontalAlignment="Left" Margin="538,288,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_EditProduct_Click"/>
+                    <Button x:Name="btn_DeleteProduct" Content="Delete" HorizontalAlignment="Left" Margin="538,320,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_DeleteProduct_Click"/>
+                    <Button x:Name="btn_ClearFormProduct" Content="Clear" HorizontalAlignment="Left" Margin="538,352,0,0" VerticalAlignment="Top" Height="28" Width="246" Click="btn_ClearFormProduct_Click"/>
+                    <Label Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" RenderTransformOrigin="0.49,0.739" Width="48"/>
+                    <TextBox x:Name="txt_SearchProduct" HorizontalAlignment="Left" Margin="53,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" Height="28" FontFamily="Segoe UI" VerticalContentAlignment="Center" Padding="0,0,0,1" TextChanged="txt_SearchProduct_TextChanged"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_CategoryTab" Header="Category Management" FontFamily="Segoe UI Semibold">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-1,0">
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
